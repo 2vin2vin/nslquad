@@ -1,0 +1,8 @@
+build --compiler=clang
+test --compiler=clang
+
+build --python_path=/usr/bin/python3
+test --python_path=/usr/bin/python3
+
+build --crosstool_top=//tools/cc_toolchain:toolchain
+test --crosstool_top=//tools/cc_toolchain:toolchain

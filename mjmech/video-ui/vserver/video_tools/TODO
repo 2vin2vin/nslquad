@@ -1,0 +1,21 @@
+both:
+ - more unified output format
+ - log parsing for python apps
+ - latency tracker via packet checksums
+
+sender:
+ - run from vserver (in parallel to send_video.sh -- client should be able to choose)
+ - command line option to change image resolution (and probably framerate?)
+ - opencv adapter, simple image parsing
+
+client:
+ - figure out how to set default window size (raw XResizeWindow sometime?)
+ - send GST_TAG_TITLE to set more interesting window title
+ - maybe use 'videomixer' to mix subtitles & video? this should have less CPU
+   usage and may help with slow network connections
+ - useful statistics
+ - get mouse / keyboard events, log them
+ - OSD display (existing)
+ - OSD display improved -- text backgrounds
+ - python replacement to VideoWindow which runs process in the background
+ - read from file (playback old) -- think about sync
