@@ -1,0 +1,12 @@
+build --experimental_allow_incremental_repository_updates
+build --compiler=compiler
+build --crosstool_top=@com_github_mjbots_rules_mbed//tools/cc_toolchain:toolchain
+
+build --nostart_end_lib
+
+build --experimental_dont_emit_static_libgcc
+
+build --strip never
+build --define CLANG=true
+
+test --test_output=errors
